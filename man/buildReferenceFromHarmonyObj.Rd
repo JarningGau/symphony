@@ -13,8 +13,8 @@ buildReferenceFromHarmonyObj(
   verbose = TRUE,
   do_umap = TRUE,
   save_uwot_path = NULL,
-  umap_min_dist = 0.1,
-  seed = 111
+  seed = 111,
+  ...
 )
 }
 \arguments{
@@ -32,9 +32,9 @@ buildReferenceFromHarmonyObj(
 
 \item{save_uwot_path}{Absolute path to save the uwot model (if do_umap is TRUE)}
 
-\item{umap_min_dist}{UMAP parameter (see uwot documentation for details)}
-
 \item{seed}{Random seed}
+
+\item{...}{UMAP parameters (see uwot::umap documentation for details)}
 }
 \value{
 Symphony reference object. Integrated embedding is stored in the $Z_corr slot. Other slots include

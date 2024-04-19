@@ -8,7 +8,7 @@
 #' @param verbose Verbose output
 #' @param do_umap Perform UMAP visualization on harmonized reference embedding
 #' @param save_uwot_path Absolute path to save the uwot model (if do_umap is TRUE)
-#' @param umap_min_dist UMAP parameter (see uwot documentation for details)
+#' @param ... UMAP parameters (see uwot::umap documentation for details)
 #' @param seed Random seed
 #' @return Symphony reference object. Integrated embedding is stored in the $Z_corr slot. Other slots include
 #' cell-level metadata ($meta_data), variable genes means and standard deviations ($vargenes),
@@ -23,8 +23,8 @@ buildReferenceFromHarmonyObj <- function(harmony_obj,
                            verbose = TRUE, 
                            do_umap = TRUE, 
                            save_uwot_path = NULL,
-                           umap_min_dist = 0.1,
-                           seed = 111) {
+                           seed = 111,
+                           ...) {
     
     set.seed(seed) # for reproducibility
     
@@ -62,12 +62,12 @@ buildReferenceFromHarmonyObj <- function(harmony_obj,
     if (do_umap) {
         if (verbose) message('UMAP')
         umap = uwot::umap(
-            t(res$Z_corr), n_neighbors = 30, learning_rate = 0.5, init = "laplacian", 
+            t(res$Z_corr), init = "laplacian", 
             metric = 'cosine', fast_sgd = FALSE, n_sgd_threads = 1, # for reproducibility
-            min_dist = umap_min_dist, n_threads = 4, ret_model = TRUE
+            n_threads = 4, ret_model = TRUE, ...
         )
         res$umap$embedding = umap$embedding
-        colnames(res$umap$embedding) = c('UMAP1', 'UMAP2')
+        colnames(res$umap$embedding) = c('UMAP_1', 'UMAP_2')
         
         # Since the nn-index component of the uwot model is not able to be saved as an 
         # object, we save the uwot model at a user-defined path.
