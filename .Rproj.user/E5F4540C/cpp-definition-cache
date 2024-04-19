@@ -1,0 +1,166 @@
+[
+    {
+        "file": "/mnt/d/jarning/dev/symphony/src/singlecellmethods.cpp",
+        "file_last_write": 1713523277.0,
+        "definitions": [
+            {
+                "usr": "c:@F@exp_mean#&1$@N@arma@S@Col>#d#S0_#S0_#I#I#&1$@N@arma@S@Col>#i#S2_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "exp_mean(const arma::vec &, const arma::vec &, const arma::vec &, int, int, const arma::uvec &, const arma::uvec &)",
+                "file": "/mnt/d/jarning/dev/symphony/src/singlecellmethods.cpp",
+                "line": 18,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@log_vmr#&1$@N@arma@S@Col>#d#S0_#S0_#I#I#&1$@N@arma@S@Mat>#d#&1$@N@arma@S@Col>#i#S4_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "log_vmr(const arma::vec &, const arma::vec &, const arma::vec &, int, int, const arma::mat &, const arma::uvec &, const arma::uvec &)",
+                "file": "/mnt/d/jarning/dev/symphony/src/singlecellmethods.cpp",
+                "line": 40,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@normalizeCLR_dgc#&1$@N@arma@S@Col>#d#S0_#S0_#I#I#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "normalizeCLR_dgc(const arma::vec &, const arma::vec &, const arma::vec &, int, int, int)",
+                "file": "/mnt/d/jarning/dev/symphony/src/singlecellmethods.cpp",
+                "line": 71,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@scaleRowsWithStats_dgc#&1$@N@arma@S@Col>#d#S0_#S0_#S0_#S0_#I#I#f#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "scaleRowsWithStats_dgc(const arma::vec &, const arma::vec &, const arma::vec &, const arma::vec &, const arma::vec &, int, int, float)",
+                "file": "/mnt/d/jarning/dev/symphony/src/singlecellmethods.cpp",
+                "line": 117,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@scaleRows_dgc#&1$@N@arma@S@Col>#d#S0_#S0_#I#I#f#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "scaleRows_dgc(const arma::vec &, const arma::vec &, const arma::vec &, int, int, float)",
+                "file": "/mnt/d/jarning/dev/symphony/src/singlecellmethods.cpp",
+                "line": 138,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@rowMeansWeighted_dgc#&1$@N@arma@S@Col>#d#S0_#S0_#S0_#I#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rowMeansWeighted_dgc(const arma::vec &, const arma::vec &, const arma::vec &, const arma::vec &, int, int)",
+                "file": "/mnt/d/jarning/dev/symphony/src/singlecellmethods.cpp",
+                "line": 185,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@rowSDs_dgc#&1$@N@arma@S@Col>#d#S0_#S0_#S0_#I#I#b#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rowSDs_dgc(const arma::vec &, const arma::vec &, const arma::vec &, const arma::vec &, int, int, bool)",
+                "file": "/mnt/d/jarning/dev/symphony/src/singlecellmethods.cpp",
+                "line": 201,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@rowVarSDs_dgc#&1$@N@arma@S@Col>#d#S0_#S0_#S0_#S0_#d#I#I#b#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rowVarSDs_dgc(const arma::vec &, const arma::vec &, const arma::vec &, const arma::vec &, const arma::vec &, double, int, int, bool)",
+                "file": "/mnt/d/jarning/dev/symphony/src/singlecellmethods.cpp",
+                "line": 230,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@rowSDsWeighted_dgc#&1$@N@arma@S@Col>#d#S0_#S0_#S0_#S0_#I#I#b#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "rowSDsWeighted_dgc(const arma::vec &, const arma::vec &, const arma::vec &, const arma::vec &, const arma::vec &, int, int, bool)",
+                "file": "/mnt/d/jarning/dev/symphony/src/singlecellmethods.cpp",
+                "line": 262,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@cosine_normalize_cpp#&$@N@arma@S@Mat>#d#I#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "cosine_normalize_cpp(arma::mat &, int)",
+                "file": "/mnt/d/jarning/dev/symphony/src/singlecellmethods.cpp",
+                "line": 292,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@soft_kmeans_cpp#$@N@arma@S@Mat>#d#S0_#i#f#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "soft_kmeans_cpp(arma::mat, arma::mat, unsigned int, float)",
+                "file": "/mnt/d/jarning/dev/symphony/src/singlecellmethods.cpp",
+                "line": 300,
+                "column": 6,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    },
+    {
+        "file": "/mnt/d/jarning/dev/symphony/src/utils.cpp",
+        "file_last_write": 1713523277.0,
+        "definitions": [
+            {
+                "usr": "c:@F@soft_cluster#&1$@N@arma@S@Mat>#d#S0_#f#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "soft_cluster(const arma::mat &, const arma::mat &, float)",
+                "file": "/mnt/d/jarning/dev/symphony/src/utils.cpp",
+                "line": 20,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@compute_ref_cache#&1$@N@arma@S@Mat>#d#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "compute_ref_cache(const arma::mat &, const arma::mat &)",
+                "file": "/mnt/d/jarning/dev/symphony/src/utils.cpp",
+                "line": 37,
+                "column": 6,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@moe_correct_ref#&1$@N@arma@S@Mat>#d#S0_#S0_#&1$@N@arma@S@Col>#d#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "moe_correct_ref(const arma::mat &, const arma::mat &, const arma::mat &, const arma::vec &, const arma::mat &)",
+                "file": "/mnt/d/jarning/dev/symphony/src/utils.cpp",
+                "line": 56,
+                "column": 11,
+                "hidden": false
+            },
+            {
+                "usr": "c:@F@get_betas#&1$@N@arma@S@Mat>#d#S0_#S0_#S0_#",
+                "kind": 6,
+                "parent_name": "",
+                "name": "get_betas(const arma::mat &, const arma::mat &, const arma::mat &, const arma::mat &)",
+                "file": "/mnt/d/jarning/dev/symphony/src/utils.cpp",
+                "line": 93,
+                "column": 12,
+                "hidden": false
+            }
+        ],
+        "hidden": false
+    }
+]
